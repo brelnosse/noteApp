@@ -1,7 +1,7 @@
-import { Colors } from "@/constants/colors";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext, useState } from "react";
 import { ScrollView, StyleSheet, Switch, Text, View } from "react-native";
+import { Colors } from "../constants/Colors";
 
 const styles = StyleSheet.create({
     optionContainer:{

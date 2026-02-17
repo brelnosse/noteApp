@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import TasksContainer from "@/components/TasksContainer";
-import { Colors } from "@/constants/colors";
 import { DataContext } from "@/context/DataContext";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext, useEffect, useState } from "react";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Colors } from "../../../constants/Colors";
 interface note {
     id: number,
     title: string,

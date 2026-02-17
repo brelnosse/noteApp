@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import SaveButton from "@/components/SaveButton";
 import TaskContent from '@/components/TaskContent';
 import TaskTitle from "@/components/TaskTitle";
-import { Colors } from "@/constants/colors";
 import { DataContext } from "@/context/DataContext";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext, useState } from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
+import { Colors } from "../../constants/Colors";
 
 
 export default function NoteList(){

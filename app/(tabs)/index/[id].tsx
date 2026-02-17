@@ -3,13 +3,13 @@ import TaskContent from "@/components/TaskContent";
 import TaskTitle from "@/components/TaskTitle";
 import ToolsMenu from "@/components/ToolsMenu";
 import UpdateButton from "@/components/UpdateBtn";
-import { Colors } from "@/constants/colors";
 import { DataContext } from "@/context/DataContext";
 import { ThemeContext } from "@/context/ThemeContext";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
 import { useContext, useEffect, useState } from "react";
 import { Alert, Modal, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Colors } from "../../../constants/Colors";
 
 export default function NoteList(){
     const {id} = useLocalSearchParams();

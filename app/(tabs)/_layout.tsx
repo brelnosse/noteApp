@@ -1,7 +1,7 @@
-import { Colors } from "@/constants/colors";
 import { Ionicons } from "@expo/vector-icons";
 import Entypo from '@expo/vector-icons/Entypo';
 import { Tabs } from "expo-router";
+import { Colors } from "../../constants/Colors";
 export default function RootLayout(){
     return (
         <Tabs 

@@ -1,7 +1,7 @@
-import { Colors } from '@/constants/colors';
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { StyleSheet, TextInput, ToastAndroid, TouchableOpacity, View } from 'react-native';
+import { Colors } from '../constants/Colors';
 
 const styles = StyleSheet.create({
     searchbar:{

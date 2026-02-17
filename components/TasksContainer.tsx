@@ -1,7 +1,7 @@
-import { Colors } from "@/constants/colors";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
 import { ActivityIndicator, FlatList, StyleSheet, Text, View } from "react-native";
+import { Colors } from "../constants/Colors";
 import TaskCard from "./TaskCard";
 interface note {
     id: number,

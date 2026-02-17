@@ -1,7 +1,7 @@
-import { Colors } from "@/constants/colors";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Colors } from "../constants/Colors";
 const styles = StyleSheet.create({
     header:{
         paddingTop: 50,

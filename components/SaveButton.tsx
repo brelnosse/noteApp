@@ -1,10 +1,10 @@
-import { Colors } from "@/constants/colors";
 import { DataContext } from "@/context/DataContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
 import { useContext } from "react";
 import { StyleSheet, Text, ToastAndroid, TouchableOpacity } from "react-native";
 import Storage from "react-native-storage";
+import { Colors } from "../constants/Colors";
 
 interface note {
     id: number,
