@@ -68,8 +68,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 **1. Cloner le dépôt**
 ```bash
-git clone https://github.com/brelnosse/[votre-repo].git
-cd [votre-repo]
+git clone https://github.com/brelnosse/noteApp.git
+cd noteApp
 ```
 
 **2. Installer les dépendances**
@@ -110,9 +110,5 @@ eas build --platform android --profile preview
 
 **Brel NOSSE** — Étudiant Ingénieur en Informatique
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brelnosse)
 
----
-
-> *N'hésitez pas à ouvrir une [issue](#) ou à soumettre une pull request pour toute suggestion d'amélioration !*
