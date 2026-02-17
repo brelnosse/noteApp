@@ -1,50 +1,118 @@
-# Welcome to your Expo app 👋
+# 📱 NoteApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> Application mobile de prise de notes, développée avec React Native, Expo et Expo Router.
 
-## Get started
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📖 Description
 
-2. Start the app
+**NoteApp** est une application mobile de prise de notes simple et intuitive. Elle permet de :
 
-   ```bash
-   npx expo start
-   ```
+- 📝 **Créer** des notes rapidement
+- ✏️ **Modifier** le contenu d'une note existante
+- 🗑️ **Supprimer** des notes
+- 👁️ **Consulter** toutes ses notes en un coup d'œil
 
-In the output, you'll find options to open the app in a
+Les notes sont **sauvegardées localement** sur l'appareil grâce à `AsyncStorage`, ce qui permet de les retrouver même après avoir fermé l'application.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Stack Technique
 
-## Get a fresh project
+| Catégorie                   | Technologie                                        |
+|-----------------------------|----------------------------------------------------|
+| **Framework**               | React Native / Expo                                |
+| **Routing**                 | Expo Router (navigation par fichiers)              |
+| **Styling**                 | Styled-Components                                  |
+| **Animations**              | React Native Reanimated & Gesture Handler          |
+| **Stockage local**          | `@react-native-async-storage/async-storage`        |
+| **Fonctionnalités natives** | Expo Haptics, Expo Blur, WebView, File System      |
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## 📂 Architecture du Projet
+
+La structure du projet suit les conventions d'Expo Router :
+```text
+NoteApp/
+├── app/                    # Routes et écrans (Expo Router)
+│   ├── (tabs)/             # Navigation par onglets (Bottom Tabs)
+│   │   ├── index.tsx       # Écran principal — liste des notes
+│   │   └── ...
+│   └── _layout.tsx         # Layout racine de l'application
+│
+├── assets/                 # Fichiers statiques (images, polices)
+├── components/             # Composants UI réutilisables
+├── constants/              # Variables globales, couleurs, thèmes
+├── context/                # État global (React Context Providers)
+└── package.json            # Dépendances et scripts du projet
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Installation & Lancement local
 
-To learn more about developing your project with Expo, look at the following resources:
+### Prérequis
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Avant de commencer, assurez-vous d'avoir installé :
 
-## Join the community
+- [Node.js](https://nodejs.org/) **v18 ou supérieur**
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) — `npm install -g expo-cli`
+- L'application **[Expo Go](https://expo.dev/client)** sur votre smartphone (iOS ou Android)
 
-Join our community of developers creating universal apps.
+### Étapes
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**1. Cloner le dépôt**
+```bash
+git clone https://github.com/brelnosse/[votre-repo].git
+cd [votre-repo]
+```
+
+**2. Installer les dépendances**
+```bash
+npm install
+# ou yarn install / pnpm install
+```
+
+**3. Démarrer le serveur de développement**
+```bash
+npx expo start
+```
+
+**4. Tester sur votre mobile**
+
+Scannez le QR code affiché dans le terminal :
+- **iOS** → avec l'application Appareil photo
+- **Android** → avec l'application Expo Go
+
+---
+
+## 📦 Build & Déploiement
+
+Pour générer un fichier exécutable (`.apk` pour Android) via **EAS Build** :
+```bash
+# 1. Se connecter à son compte Expo
+eas login
+
+# 2. Lancer la compilation pour Android
+eas build --platform android --profile preview
+```
+
+> 💡 Pour un build iOS ou une publication sur les stores, consultez la [documentation EAS](https://docs.expo.dev/build/introduction/).
+
+---
+
+## 👨‍💻 Auteur
+
+**Brel NOSSE** — Étudiant Ingénieur en Informatique
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brelnosse)
+
+---
+
+> *N'hésitez pas à ouvrir une [issue](#) ou à soumettre une pull request pour toute suggestion d'amélioration !*
